@@ -2,8 +2,8 @@
 
 ## 목표
 
-무기명 게시판 BBS 기능을 개발한다. 최신 10개의 article만 관리하며, 각 article은 제목 (한글 20자 이내), 작성시각 time, 본문 (한글 200자 이내) 로 이루어져있다. 3개의 화면 (목록, article 열람, article 생성) 으로 구성되어있고, 목록에서 article을 선택 후 열람하거나 삭제가 가능하다.
-
+무기명 게시판 BBS 기능을 개발한다. 최신 10개의 article만 관리하며, 각 article은 제목 (한글 20자 이내), 작성시각 time, 본문 (한글 200자 이내) 로 이루어져있다. 3개의 화면 (목록, article 열람, article 생성) 으로 구성되어있고, 목록에서 check box로 article을 하나 선택 후 read 또는 delete 할 수 있고, 제목을 바로 누르면 read로 간주한다.
+목록의 UI는 https://sl.bing.net/en6PKPPlyLs 와 같이 한다. (각 행마다 checkbox 와 제목, time 순서대로 나온다)
 
 ## 사용 기술
 
@@ -17,8 +17,8 @@
 
 3개의 화면으로 구성되어있다. 서비스 최초 진입시에는 목록화면을 보여준다.
 
-* 목록 조회 : article 의 제목과 time을 생성 순서대로 보여주며, 가장 최신의 10개만 관리하며, 그전의 오래된 article은 삭제한다. 목록 밑에 New 버튼 및 Delete 버튼을 제공한다.
-* article 열람 : 목록에서 article의 제목을 눌러서 선택하면 article의 제목, time, 본문을 보여준다. 아래에 List 버튼을 누르면 목록 화면으로 돌아간다.
+* 목록 조회 : article 의 제목과 time을 생성 순서대로 보여주며, 가장 최신의 10개만 관리하며, 그전의 오래된 article은 삭제한다. article마다 제목 왼쪽에 check box가 있어서 어느 하나만 삭제가 가능하다. 목록 밑에 New 버튼, Read 버튼, Delete 버튼을 제공한다. article의 check box로 선택하면 그 다음 Read 또는 Delete 를 할 수 있고, 제목을 누르면 Read 로 간주한다.
+* article 열람 : 목록에서 article의 Read를 선택하면 article의 제목, time, 본문을 보여준다. 아래에 List 버튼을 누르면 목록 화면으로 돌아간다.
 * article 생성 : New 버튼을 누르면, article 작성 창으로 바뀌며, 제목 (한글 20자 이내) 및 본문 (한글 200자 이내) 를 작성할수 있는 필드가 있고, 아래에 Post, Cancel 의 두개 버튼이 있다. Post 버튼을 누르면, 그때의 시각을 time 값으로 하고, 작성한 article을 목록에 추가하며 목록 화면으로 돌아가고, Cancel 버튼은 작성중이던 내용을 버리고 목록 화면으로 돌아간다. 
 
 ## 조건
